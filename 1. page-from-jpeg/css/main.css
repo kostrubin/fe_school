@@ -37,13 +37,15 @@ header {
 }
 
 header img {
-    position: relative;
-    top: -300px;
+    object-fit: cover;
+    object-position: center;
     width: 100%;
+    height: 200px;
 }
 
 main, footer div#f-content {
     max-width: 984px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -59,41 +61,41 @@ main div#logo img {
     border-radius: 50%;
 }
 
-section {
+main section {
     float: left;
     width: 72%;
     margin-right: 20px;
     margin-bottom: 48px;
 }
 
-section div#aof-items {
+main section div#aof-items {
     display: flex;
     flex-wrap: wrap;
 }
 
-section div#aof-items div.aof-item {
+main section div#aof-items div.aof-item {
     display: flex;
     margin: 0 12px 12px 0;
 }
 
-section div#aof-items div.aof-item img {
+main section div#aof-items div.aof-item img {
     height: 18px;
     padding: 6px;
 }
 
-section div#aof-items div.aof-item:first-of-type img {
+main section div#aof-items div.aof-item:first-of-type img {
     background-color: #5A4D99;
 }
 
-section div#aof-items div.aof-item:nth-of-type(2) img {
+main section div#aof-items div.aof-item:nth-of-type(2) img {
     background-color: #BFCC36;
 }
 
-section div#aof-items div.aof-item:last-of-type img {
+main section div#aof-items div.aof-item:last-of-type img {
     background-color: #1A587A;
 }
 
-section div#aof-items div.aof-item p {
+main section div#aof-items div.aof-item p {
     height: 30px;
     padding: 0 6px;
     line-height: 2;
@@ -102,43 +104,44 @@ section div#aof-items div.aof-item p {
     color: #383838;
 }
 
-article {
+main aside {
     float: right;
     width: 25%;
+    min-width: 180px;
 }
 
-article div#contact div img {
+main aside div#contact div img {
     float: left;
     margin-right: 12px;
     height: 48px;
     border-radius: 50%;
 }
 
-article div#contact div p, article div#contact div a {
+main aside div#contact div p, aside div#contact div a {
     margin: 6px 0;
 }
 
-article div#contact div p {
+main aside div#contact div p {
     line-height: 1.2;
 }
 
-article a {
+main aside a {
     color: #009DF2;
 }
 
-article a:hover {
+main aside a:hover {
     color: #1A587A;
 }
 
-article div#follow h2 {
+main aside div#follow h2 {
     margin-bottom: 0;
 }
 
-article div#follow div {
+main aside div#follow div {
     margin: 12px 0;
 }
 
-article div#follow div img {
+main aside div#follow div img {
     height: 24px;
     margin-right: 12px;
     vertical-align: bottom;
@@ -160,7 +163,7 @@ footer div#f-content div#search {
     right: 0;
     top: 48px;
     margin-top: 48px;
-    width: 400px;
+    width: 40%;
 }
 
 footer div#f-content div#search img {
@@ -184,13 +187,13 @@ footer div#f-content div#search input::placeholder {
     color: rgb(190, 190, 190);
 }
 
-footer div#lli-items {
+footer div#f-content div#lli-items {
     display: flex;
     justify-content: space-between;
     margin: 48px 0;
 }
 
-footer div#lli-items div.lli-item {
+footer div#f-content div#lli-items div.lli-item {
     position: relative;
     width: 27%;
     height: 460px;
@@ -198,11 +201,11 @@ footer div#lli-items div.lli-item {
     background-color: #fff;
 }
 
-footer div#lli-items div.lli-item h3 {
+footer div#f-content div#lli-items div.lli-item h3 {
     line-height: 1.5;
 }
 
-footer div#lli-items div.lli-item img {
+footer div#f-content div#lli-items div.lli-item img {
     float: left;
     height: 80px;
     margin-right: 12px;
@@ -210,50 +213,50 @@ footer div#lli-items div.lli-item img {
     border-radius: 5px;
 }
 
-footer div#lli-items div.lli-item p {
+footer div#f-content div#lli-items div.lli-item p {
     clear: both;
     margin: 24px 0;
 }
 
-footer div#lli-items div.lli-item span {
+footer div#f-content div#lli-items div.lli-item span {
     display: block;
     margin-bottom: 12px;
     font-size: 15px;
 }
 
-footer div#lli-items div.lli-item div {
+footer div#f-content div#lli-items div.lli-item div {
     position: absolute;
     bottom: 64px;
     right: 24px;
     text-align: right;
 }
 
-footer div#lli-items div.lli-item div > * {
+footer div#f-content div#lli-items div.lli-item div > * {
     margin: 0;
 }
 
-footer div#lli-items div.lli-item div p {
+footer div#f-content div#lli-items div.lli-item div p {
     font-size: 12px;
 }
 
-footer div#lli-items div.lli-item a {
+footer div#f-content div#lli-items div.lli-item a {
     display: inline-block;
     text-align: center;
     border-radius: 3px;
 }
 
-footer div#lli-items div.lli-item a:first-of-type {
+footer div#f-content div#lli-items div.lli-item a:first-of-type {
     padding: 3px 6px;
     color: #009DF2;
     border: 1px solid #009DF2;   
 }
 
-footer div#lli-items div.lli-item a:first-of-type:hover {
+footer div#f-content div#lli-items div.lli-item a:first-of-type:hover {
     color: #fff;
     background-color: #009DF2;
 }
 
-footer div#lli-items div.lli-item a:last-of-type {
+footer div#f-content div#lli-items div.lli-item a:last-of-type {
     position: absolute;
     bottom: 24px;
     left: 24px;
@@ -263,8 +266,103 @@ footer div#lli-items div.lli-item a:last-of-type {
     background-color: #FFA500;
 }
 
-footer div#lli-items div.lli-item a:last-of-type:hover {
+footer div#f-content div#lli-items div.lli-item a:last-of-type:hover {
     color: #FFA500;
     background-color: #fff;
     border: 1px solid #FFA500;
+}
+
+/* For mobile */
+
+@media (max-width: 800px) {
+
+    h1, h2 {
+        margin: 24px 0;
+    }
+
+    main section {
+        width: 100%;
+    }
+
+    main aside {
+        float: none;
+        margin-bottom: 48px;
+    }
+
+    main aside div#contact {
+        margin-bottom: 48px;
+    }
+
+    footer div#f-content {
+        width: 100%;
+        padding: 6px 0;
+    }
+
+    footer div#f-content h1,
+    footer div#f-content div#lli-items div.lli-item p:not(.author),
+    footer div#f-content div#lli-items div.lli-item a:last-of-type,
+    footer div#f-content div#lli-items div.lli-item span {
+        display: none;
+    }
+
+    footer div#f-content div#search {
+        top: 2px;
+        left: 0;
+        width: 100%;
+        margin-top: 0;
+        padding: 18px 0;
+        background-color: #fff;
+        border-top: 2px solid rgb(239, 239, 239);
+        border-bottom: 2px solid rgb(239, 239, 239);
+    }
+
+    footer div#f-content div#search img {
+        top: 30px;
+        left: 7%;
+    }
+
+    footer div#f-content div#search input {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    footer div#f-content div#lli-items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 80px;
+        margin-bottom: 12px;
+    }
+
+    footer div#f-content div#lli-items div.lli-item {
+        width: 80%;
+        height: 160px;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+
+    footer div#f-content div#lli-items div.lli-item img {
+        margin-bottom: 12px;
+    }
+
+    footer div#f-content div#lli-items div.lli-item div {
+        bottom: 18px;
+    }
+
+    footer div#f-content div#lli-items div.lli-item div h4 {
+        font-size: 21px;
+    }
+
+    footer div#f-content div#lli-items div.lli-item p.author {
+        margin: 12px 0;
+        font-size: 15px;
+    }
+
+    footer div#f-content div#lli-items div.lli-item a:first-of-type {
+        display: block;
+        clear: both;
+        width: 45px;
+        margin-top: 30px;
+    }
 }
