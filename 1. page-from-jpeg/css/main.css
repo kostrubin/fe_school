@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #383838;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+h1, h2 {
+    margin: 48px 0 30px;
+}
+
+h1, h4 {
+    font-size: 36px;
+}
+
+h2, h3 {
+    font-size: 21px;
+}
+
+p {
+    color: #757575;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+header img {
+    position: relative;
+    top: -300px;
+    width: 100%;
+}
+
+main, footer div#f-content {
+    max-width: 984px;
+    margin: 0 auto;
+}
+
+main div#logo {
+    width: 100%;
+    height: 71px;
+}
+
+main div#logo img {
+    position: relative;
+    top: -71px;
+    height: 142px;
+    border-radius: 50%;
+}
+
+section {
+    float: left;
+    width: 72%;
+    margin-right: 20px;
+    margin-bottom: 48px;
+}
+
+section div#aof-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section div#aof-items div.aof-item {
+    display: flex;
+    margin: 0 12px 12px 0;
+}
+
+section div#aof-items div.aof-item img {
+    height: 18px;
+    padding: 6px;
+}
+
+section div#aof-items div.aof-item:first-of-type img {
+    background-color: #5A4D99;
+}
+
+section div#aof-items div.aof-item:nth-of-type(2) img {
+    background-color: #BFCC36;
+}
+
+section div#aof-items div.aof-item:last-of-type img {
+    background-color: #1A587A;
+}
+
+section div#aof-items div.aof-item p {
+    height: 30px;
+    padding: 0 6px;
+    line-height: 2;
+    font-size: 15px;
+    background: rgb(246, 246, 246);
+    color: #383838;
+}
+
+article {
+    float: right;
+    width: 25%;
+}
+
+article div#contact div img {
+    float: left;
+    margin-right: 12px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+article div#contact div p, article div#contact div a {
+    margin: 6px 0;
+}
+
+article div#contact div p {
+    line-height: 1.2;
+}
+
+article a {
+    color: #009DF2;
+}
+
+article a:hover {
+    color: #1A587A;
+}
+
+article div#follow h2 {
+    margin-bottom: 0;
+}
+
+article div#follow div {
+    margin: 12px 0;
+}
+
+article div#follow div img {
+    height: 24px;
+    margin-right: 12px;
+    vertical-align: bottom;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    background:rgb(246, 246, 246);
+}
+
+footer div#f-content {
+    position: relative;
+    padding: 48px 0;
+}
+
+footer div#f-content div#search {
+    position: absolute;
+    right: 0;
+    top: 48px;
+    margin-top: 48px;
+    width: 400px;
+}
+
+footer div#f-content div#search img {
+    height: 18px;
+    position: absolute;
+    left: 12px;
+    top: 25%;
+}
+
+footer div#f-content div#search input {
+    width: 100%;
+    height: 42px;
+    padding-left: 36px;
+    background-color: rgb(254, 254, 254);
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px; 
+}
+
+footer div#f-content div#search input::placeholder {
+    font-size: 15px;
+    color: rgb(190, 190, 190);
+}
+
+footer div#lli-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 48px 0;
+}
+
+footer div#lli-items div.lli-item {
+    position: relative;
+    width: 27%;
+    height: 460px;
+    padding: 24px;
+    background-color: #fff;
+}
+
+footer div#lli-items div.lli-item h3 {
+    line-height: 1.5;
+}
+
+footer div#lli-items div.lli-item img {
+    float: left;
+    height: 80px;
+    margin-right: 12px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+}
+
+footer div#lli-items div.lli-item p {
+    clear: both;
+    margin: 24px 0;
+}
+
+footer div#lli-items div.lli-item span {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+footer div#lli-items div.lli-item div {
+    position: absolute;
+    bottom: 64px;
+    right: 24px;
+    text-align: right;
+}
+
+footer div#lli-items div.lli-item div > * {
+    margin: 0;
+}
+
+footer div#lli-items div.lli-item div p {
+    font-size: 12px;
+}
+
+footer div#lli-items div.lli-item a {
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+}
+
+footer div#lli-items div.lli-item a:first-of-type {
+    padding: 3px 6px;
+    color: #009DF2;
+    border: 1px solid #009DF2;   
+}
+
+footer div#lli-items div.lli-item a:first-of-type:hover {
+    color: #fff;
+    background-color: #009DF2;
+}
+
+footer div#lli-items div.lli-item a:last-of-type {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    width: 85%;
+    padding: 6px 0;
+    color: #fff;
+    background-color: #FFA500;
+}
+
+footer div#lli-items div.lli-item a:last-of-type:hover {
+    color: #FFA500;
+    background-color: #fff;
+    border: 1px solid #FFA500;
+}
