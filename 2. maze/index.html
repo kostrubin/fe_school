@@ -373,7 +373,7 @@
             turnLeft() {
                 turnsCount += 1;
                 direction -= 1;
-                direction = direction < 0 ? 3 : direction;
+                direction = direction > 3 ? 0 : direction;
                 rotatePiece(direction);
             },
 
@@ -408,6 +408,11 @@
                 }
 
                 movePiece(position);
+            },
+
+            amIFree() {
+                result.textContent = successResult;
+                result.classList.add(successModifier);
             }
         };
 
@@ -454,10 +459,23 @@
 
     function escapePlan() {
         const piece = createPiece();
-        // piece.isThereWay();
-        // piece.goForward();
-        // piece.turnRight();
-        // piece.turnLeft();
+        go();
+
+        function go() {
+            if (piece.isThereWay()) {
+                piece.goForward();
+            } else {
+                piece.turnRight();
+                if (!piece.isThereWay()) {
+                    piece.turnRight();
+                    piece.turnRight();
+                    piece.goForward();
+                }
+            }
+
+            go();
+        }
+        
     }
 
     function main() {
