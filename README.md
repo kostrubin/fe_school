@@ -32,7 +32,7 @@ We are waiting for you to join our team!
 
 
 ## Results
-I've implemented only two tasks. Moreover, the second task was done pretty silly. I didn't have enough time to optimize it and used the first desition that came to my mind. So don't judge strictly:)
+I've implemented only two tasks. Moreover, the second task was done pretty silly. I didn't have enough time to optimize it and used the first decision that came to my mind. So don't judge strictly:)
 
 ## Contacts
 Mobile: +79111109871
