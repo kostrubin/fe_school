@@ -179,7 +179,7 @@ footer div#f-content div#search input {
     padding-left: 36px;
     background-color: rgb(254, 254, 254);
     border: 1px solid rgb(190, 190, 190);
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 footer div#f-content div#search input::placeholder {
@@ -248,7 +248,7 @@ footer div#f-content div#lli-items div.lli-item a {
 footer div#f-content div#lli-items div.lli-item a:first-of-type {
     padding: 3px 6px;
     color: #009DF2;
-    border: 1px solid #009DF2;   
+    border: 1px solid #009DF2;
 }
 
 footer div#f-content div#lli-items div.lli-item a:first-of-type:hover {
@@ -282,6 +282,10 @@ footer div#f-content div#lli-items div.lli-item a:last-of-type:hover {
 
     main section {
         width: 100%;
+    }
+
+    main section div#aof-items {
+        flex-direction: column;
     }
 
     main aside {
